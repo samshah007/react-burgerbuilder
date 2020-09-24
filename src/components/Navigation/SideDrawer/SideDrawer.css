@@ -10,6 +10,9 @@
     box-sizing: border-box;
     padding: 32px 16px;
     transition: tansform 0.3s ease-out;
+    -webkit-transition: tansform 0.3s ease-out;
+    -moz-transition: tansform 0.3s ease-out;
+    -o-transition: tansform 0.3s ease-out;
 }
 @media (min-width:500px){
     .sideDrawer{
@@ -17,10 +20,16 @@
     }
 }
 .open{
-    transition:translateX(0);
+    transform:translateX(0);
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -o-transform:translateX(0);
 }
 .close{
-    transition:translateX(-100%);
+    transform:translateX(-100%);
+    -webkit-transform:translateX(-100%);
+    -moz-transform:translateX(-100%);
+    -o-transform:translateX(-100%);
 }
 .sideDrawerLogo{
     height: 21%;
