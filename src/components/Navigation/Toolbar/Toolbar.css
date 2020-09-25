@@ -14,7 +14,13 @@
 }
 .toolbar nav{
     height: 100%;
+    display: none;
 }
 .toolBarLogo{
     height: 80%;
+}
+@media (min-width:500px){
+    .toolbar nav{
+        display: block;
+    }
 }
