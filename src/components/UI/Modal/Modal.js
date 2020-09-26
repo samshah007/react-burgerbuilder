@@ -3,13 +3,10 @@ import './Modal.css';
 import Auxillary from '../../../hoc/auxillary';
 import Backdrop from '../Backdrop/Backdrop';
 
-class Modal extends Component {
-    componentDidUpdate(){
-        console.log('[Modal] didUpdate')
-    }
-    shouldComponentUpdate(nextProps, nextState){
-        console.log(nextProps.show, this.props.show)
-        return true;
+class Modal extends Component {    
+    shouldComponentUpdate(nextProps, nextState){        
+        return nextProps.show !== this.props.show;
+        //return true;
     }
     render(){
         return(
